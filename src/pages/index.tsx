@@ -1,10 +1,9 @@
 "use client"; 
-import Image from 'next/image'
 import styles from './page.module.css'
 import { useLottie } from "lottie-react";
-import animation from "./animation.json";
+import animation from "@/asset/animation.json";
 
-export default function Home() {
+export default function Page() {
   const options = {
     animationData: animation,
     loop: true
