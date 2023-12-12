@@ -2,6 +2,7 @@
 import styles from './page.module.css'
 import { useLottie } from "lottie-react";
 import animation from "@/asset/animation.json";
+import Layout from '../components/layout'
 
 export default function Page() {
   const options = {
