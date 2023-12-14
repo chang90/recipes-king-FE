@@ -2,6 +2,8 @@
 import styles from './page.module.css'
 import { useLottie } from "lottie-react";
 import animation from "@/asset/animation.json";
+import CardList from '@/components/cardList';
+import Card from '@/components/card';
 
 export default function Page() {
   const options = {
@@ -12,16 +14,16 @@ export default function Page() {
   const { View } = useLottie(options);
   return (
     <main className={styles.main}>
-        <div className={styles.wrapper}>
-          <div className={`${styles.box} ${styles.a}`}>A</div>
-          <div className={`${styles.box} ${styles.b}`}>B</div>
-          <div className={`${styles.box} ${styles.c}`}>C</div>
-          <div className={`${styles.box} ${styles.d}`}>
-            <div className={`${styles.box} ${styles.e}`}>E</div>
-            <div className={`${styles.box} ${styles.f}`}>F</div>
-            <div className={`${styles.box} ${styles.g}`}>G</div>
-          </div>
-      </div>
+      <CardList>
+        <Card 
+          title='菠菜汤'
+          description='菠菜 + 海米 + 水'
+          image={{
+            src: "https://placehold.co/600x400/EEE/31343C",
+            alt: "菠菜汤"
+          }}
+        />
+      </CardList>
       <div className={styles.description}>
         <>{View}</>
       </div>
