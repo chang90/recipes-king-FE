@@ -1,9 +1,9 @@
 "use client"; 
-import styles from './page.module.css'
+import styles from './page.module.scss'
 import { useLottie } from "lottie-react";
 import animation from "@/asset/animation.json";
 import CardList from '@/components/cardList';
-import Card from '@/components/card';
+import Card from '@/components/card/card';
 
 export default function Page() {
   const options = {
