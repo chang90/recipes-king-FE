@@ -19,14 +19,22 @@ export default function Page() {
           title='菠菜汤'
           description='菠菜 + 海米 + 水'
           image={{
-            src: "https://placehold.co/600x400/EEE/31343C",
+            src: "https://placehold.co/30x30/EEE/31343C",
             alt: "菠菜汤"
           }}
         />
+        <Card 
+          title='牛肉饭'
+          description='牛肉 + 料酒 + 水 + 洋葱 + 味霖'
+          image={{
+            src: "https://placehold.co/30x30/ABC/31343C",
+            alt: "牛肉饭"
+          }}
+        />
       </CardList>
-      <div className={styles.description}>
+      {/* <div className={styles.description}>
         <>{View}</>
-      </div>
+      </div> */}
     </main>
   )
 }
