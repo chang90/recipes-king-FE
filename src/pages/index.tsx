@@ -32,9 +32,9 @@ export default function Page() {
           }}
         />
       </CardList>
-      {/* <div className={styles.description}>
+      <div className={styles.description}>
         <>{View}</>
-      </div> */}
+      </div>
     </main>
   )
 }
