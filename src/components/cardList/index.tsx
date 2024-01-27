@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./cardList.module.scss";
 
 interface PropsType {
   children: React.ReactNode;
@@ -6,7 +7,7 @@ interface PropsType {
 
 const CardList: React.FC<PropsType> = (props) => {
   return (
-    <ul>
+    <ul className={styles["card-list"]}>
       {React.Children.map(props.children, (child, key) => {
         return <li key={key}>{child}</li>
       })}
