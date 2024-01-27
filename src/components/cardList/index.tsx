@@ -9,7 +9,7 @@ const CardList: React.FC<PropsType> = (props) => {
   return (
     <ul className={styles["card-list"]}>
       {React.Children.map(props.children, (child, key) => {
-        return <li key={key}>{child}</li>
+        return <li className={styles["card-list__item"]} key={key}>{child}</li>
       })}
     </ul>
   );

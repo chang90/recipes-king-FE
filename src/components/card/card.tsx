@@ -24,7 +24,6 @@ const Card: React.FC<CardProps> = ({ title, description, image }) => {
         alt={image?.alt || "Image"}
         layout='fill' />
       </div>
-
     </div>
   )
 }

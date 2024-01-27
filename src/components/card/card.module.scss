@@ -3,7 +3,11 @@
   border-radius: 1rem;
   padding: .5rem;
   color: black;
-
+  grid-column: auto;
+  grid-row: 1 / 4;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
 }
 
 .picture {

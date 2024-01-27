@@ -1,5 +1,17 @@
 .card-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
   ul, li {
     list-style-type: none;
+  }
+
+  &__item {
+    grid-column: auto;
+    grid-row: 1/4;
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid;
   }
 }
