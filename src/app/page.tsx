@@ -4,7 +4,10 @@ import { useLottie } from "lottie-react";
 import animation from "@/asset/animation.json";
 import CardList from '@/components/cardList';
 import Card from '@/components/card/card';
-
+export const metadata = {
+  title:"Test Home page",
+  description: "This is home page"
+};
 export default function Page() {
   const options = {
     animationData: animation,
