@@ -4,6 +4,7 @@ import { useLottie } from "lottie-react";
 import animation from "@/asset/animation.json";
 import CardList from '@/components/cardList';
 import Card from '@/components/card/card';
+import Link from 'next/link';
 
 export default function Page() {
   const options = {
@@ -14,6 +15,7 @@ export default function Page() {
   const { View } = useLottie(options);
   return (
     <main className={styles.main}>
+      <Link href="/menu/1" locale="en-AU" replace>Menu</Link>
       <CardList>
         <Card 
           title='菠菜汤'
