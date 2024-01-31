@@ -1,14 +1,12 @@
+"use client"; 
 import Image from "next/image";
 import { useLottie } from "lottie-react";
 import React from "react";
-import styles from "./lottie-image.module.scss";
-
 
 type ImageDetails = {
-  src: string;
-  lottie: Object;
+  src?: string;
+  lottie?: Object;
   alt: string;
-
 }
 
 interface ImageProps {

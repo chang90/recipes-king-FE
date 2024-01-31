@@ -1,21 +1,15 @@
-"use client"; 
 import styles from './page.module.scss'
-import { useLottie } from "lottie-react";
+// import { useLottie } from "lottie-react";
 import animation from "@/asset/animation.json";
 import CardList from '@/components/cardList';
 import Card from '@/components/card/card';
 import Link from 'next/link';
+import LottieImage from '@/components/image/lottieImage';
 
 export default function Page() {
-  const options = {
-    animationData: animation,
-    loop: true
-  };
-
-  const { View } = useLottie(options);
   return (
     <main className={styles.main}>
-      <Link href="/menu/1" locale="en-AU" replace>Menu</Link>
+      <Link href="/menu/1" replace>Menu</Link>
       <CardList>
         <Card 
           title='菠菜汤'
@@ -51,7 +45,7 @@ export default function Page() {
         />
       </CardList>
       <div className={styles.description}>
-        <>{View}</>
+        <LottieImage title="lottie" description='this is an image' image={{lottie:animation, alt:'lottie'}} />
       </div>
     </main>
   )

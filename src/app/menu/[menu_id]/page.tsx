@@ -18,6 +18,5 @@ export default function Menu({params}: Props) {
       <h1>Menu {params.menu_id}</h1>
       <Link href="/">Home</Link>
     </>
-    
   )
 }
