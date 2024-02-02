@@ -1,16 +1,12 @@
 import Image from "next/image";
 import React from "react";
 import styles from "./card.module.scss";
-
-type Image = {
-  src: string;
-  alt: string;
-}
+import { Image as Imagetype } from "@/types";
 
 interface CardProps {
   title: string;
   description: string;
-  image: Image;
+  image: Imagetype;
 }
 
 const Card: React.FC<CardProps> = ({ title, description, image }) => {
@@ -22,7 +18,7 @@ const Card: React.FC<CardProps> = ({ title, description, image }) => {
         <Image
         src={image.src}
         alt={image?.alt || "Image"}
-        layout='fill' />
+        fill />
       </div>
     </div>
   )

@@ -4,15 +4,16 @@ const path = require('path')
 const nextConfig = {
   images: {
     dangerouslyAllowSVG: true,
-    domains: ["placehold.co"]
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'placehold.co',
+        port: '',
+      },
+    ],
   },
   sassOptions: {
     includePaths: [path.join(__dirname, 'styles')],
-  },
-  i18n: {
-    locales: ['en-AU', 'zh_CN'],
-    defaultLocale: 'en-AU',
-    localeDetection: false,
   },
 }
 

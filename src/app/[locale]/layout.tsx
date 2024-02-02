@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import '../globals.scss';
+import '../../globals.scss';
+import Nav from '@/components/nav/nav';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,15 +15,23 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  const logo = {
+
+  }
   return (
     <html>
       <body className={inter.className}>
-        <header>
-          <p>Header</p>
-        </header>
+        <Nav
+          logo={{
+            src: "https://placehold.co/10x10/ABC/31343C",
+            alt: "LOGO"
+          }}
+          content={[]}
+          />
         {children}
         <footer>Footer</footer>
-        </body>
+      </body>
     </html>
   )
 }
