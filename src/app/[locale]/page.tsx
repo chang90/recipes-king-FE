@@ -9,7 +9,7 @@ import LottieImage from '@/components/image/lottieImage';
 export default function Page({ params: { locale } }) {
   return (
     <main className={styles.main}>
-      <Link href={`${locale}/menu/1`} locale="en-AU" replace>Menu</Link>
+      <Link href={`${locale}/menu/1`} locale="en-AU">Menu</Link>
       <CardList>
         <Card 
           title='菠菜汤'
