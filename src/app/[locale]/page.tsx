@@ -6,10 +6,10 @@ import Card from '@/components/card/card';
 import Link from 'next/link';
 import LottieImage from '@/components/image/lottieImage';
 
-export default function Page() {
+export default function Page({ params: { locale } }) {
   return (
     <main className={styles.main}>
-      <Link href="/menu/1" replace>Menu</Link>
+      <Link href={`${locale}/menu/1`} locale="en-AU" replace>Menu</Link>
       <CardList>
         <Card 
           title='菠菜汤'
