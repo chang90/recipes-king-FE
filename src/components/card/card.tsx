@@ -5,21 +5,27 @@ import { Image as Imagetype } from "@/types";
 
 interface CardProps {
   title: string;
-  description: string;
-  image: Imagetype;
+  description?: string;
+  image?: Imagetype | null;
+  children?: React.ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({ title, description, image }) => {
+const Card = ({ title = "", description = "", image = null, children = null }: CardProps) => {
   return (
     <div className={styles.wrapper}>
       <h2>{title}</h2>
       <p>{description}</p>
       <div className={styles.picture}>
-        <Image
-        src={image.src}
-        alt={image?.alt || "Image"}
-        fill />
+        {
+          image && (
+          <Image
+          src={image.src}
+          alt={image?.alt || "Image"}
+          fill />
+          )
+        }
       </div>
+      {children}
     </div>
   )
 }
