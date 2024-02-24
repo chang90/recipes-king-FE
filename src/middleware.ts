@@ -10,7 +10,7 @@ export function middleware(request: NextRequest) {
     response.cookies.set("theme","dark");
   }
 
-  response.headers.set("abc",123);
+  response.headers.set("abc","123");
 
   return response;
 }
