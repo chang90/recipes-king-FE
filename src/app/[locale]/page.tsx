@@ -1,7 +1,7 @@
 import styles from './page.module.scss'
 // import { useLottie } from "lottie-react";
 import animation from "@/asset/animation.json";
-import CardList from '@/components/cardList';
+import Carousel from '@/components/carousel';
 import Card from '@/components/card/card';
 import Link from 'next/link';
 import LottieImage from '@/components/image/lottieImage';
@@ -10,7 +10,7 @@ export default function Page({ params: { locale } }: {params: { locale: {}}}) {
   return (
     <main className={styles.main}>
       <Link href={`${locale}/menu/1`} locale="en-AU">Menu</Link>
-      <CardList>
+      <Carousel>
         <Card 
           title='菠菜汤'
           description='菠菜 + 海米 + 水'
@@ -43,7 +43,7 @@ export default function Page({ params: { locale } }: {params: { locale: {}}}) {
             alt: "茶叶蛋"
           }}
         />
-      </CardList>
+      </Carousel>
       <div className={styles.description}>
         <LottieImage title="lottie" description='this is an image' image={{lottie:animation, alt:'lottie'}} />
       </div>
