@@ -1,6 +1,6 @@
 "use client"; 
-import Image from "next/image";
-import { useLottie } from "lottie-react";
+import { DotLottiePlayer, Controls } from '@dotlottie/react-player';
+import '@dotlottie/react-player/dist/index.css';
 import React from "react";
 
 type ImageDetails = {
@@ -21,14 +21,14 @@ const LottieImage: React.FC<ImageProps> = ({ title, description, image }) => {
     loop: true
   };
 
-  const { View } = useLottie(options);
   return (
-        image.src ?
-        <Image
-        src={image.src}
-        alt={image?.alt || "Image"}
-        layout='fill' /> :
-        <>{View}</>
+    <DotLottiePlayer
+      src={image?.src || ""}
+      autoplay
+      loop
+    >
+      <Controls />
+    </DotLottiePlayer>
   )
 }
 

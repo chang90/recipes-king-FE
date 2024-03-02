@@ -1,6 +1,4 @@
 import styles from './page.module.scss'
-// import { useLottie } from "lottie-react";
-import animation from "@/asset/animation.json";
 import Carousel from '@/components/carousel';
 import Card from '@/components/card/card';
 import Link from 'next/link';
@@ -45,7 +43,7 @@ export default function Page({ params: { locale } }: {params: { locale: {}}}) {
         />
       </Carousel>
       <div className={styles.description}>
-        <LottieImage title="lottie" description='this is an image' image={{lottie:animation, alt:'lottie'}} />
+        <LottieImage title="lottie" description='this is an image' image={{src: "/asset/animation.lottie", alt:'lottie'}} />
       </div>
     </main>
   )
