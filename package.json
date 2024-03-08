@@ -9,7 +9,7 @@
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
-    "coverage": "jest --coverage --watchAll --collectCoverageFrom'src/components/**/*.{ts,tsx}'"
+    "coverage": "jest --coverage --watchAll --collectCoverageFrom'src/components/**/*.{ts,tsx}' --collectCoverageFrom'src/components/**/*.{types,stories,constants,test,spec}.{ts,tsx}'"
   },
   "dependencies": {
     "@dotlottie/react-player": "^1.6.17",
