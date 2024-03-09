@@ -3,6 +3,7 @@ import Carousel from '@/components/carousel';
 import Card from '@/components/card/card';
 import Link from 'next/link';
 import LottieImage from '@/components/image/lottieImage';
+import { Application } from '@/components/application/Application';
 
 export default function Page({ params: { locale } }: {params: { locale: {}}}) {
   return (
@@ -45,6 +46,7 @@ export default function Page({ params: { locale } }: {params: { locale: {}}}) {
       <div className={styles.description}>
         <LottieImage title="lottie" description='this is an image' image={{src: "/asset/animation.lottie", alt:'lottie'}} />
       </div>
+      <Application />
     </main>
   )
 }
