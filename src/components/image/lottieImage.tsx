@@ -1,13 +1,13 @@
-"use client"; 
-import { DotLottiePlayer, Controls } from '@dotlottie/react-player';
-import '@dotlottie/react-player/dist/index.css';
+"use client";
+import { DotLottiePlayer, Controls } from "@dotlottie/react-player";
+import "@dotlottie/react-player/dist/index.css";
 import React from "react";
 
 type ImageDetails = {
   src?: string;
   lottie?: Object;
   alt: string;
-}
+};
 
 interface ImageProps {
   title: string;
@@ -18,18 +18,14 @@ interface ImageProps {
 const LottieImage: React.FC<ImageProps> = ({ title, description, image }) => {
   const options = {
     animationData: image?.lottie,
-    loop: true
+    loop: true,
   };
 
   return (
-    <DotLottiePlayer
-      src={image?.src || ""}
-      autoplay
-      loop
-    >
+    <DotLottiePlayer src={image?.src || ""} autoplay loop>
       <Controls />
     </DotLottiePlayer>
-  )
-}
+  );
+};
 
 export default LottieImage;

@@ -6,7 +6,7 @@ import { Image as ImageType } from "@/types";
 type Content = {
   url: string;
   content: Content[];
-}
+};
 
 interface NavProps {
   logo: ImageType;
@@ -20,9 +20,10 @@ const Nav: React.FC<NavProps> = ({ logo, content }) => {
         width={30}
         height={40}
         src={logo?.src}
-        alt={logo?.alt || "Image"}/>
+        alt={logo?.alt || "Image"}
+      />
     </div>
-  )
-}
+  );
+};
 
 export default Nav;

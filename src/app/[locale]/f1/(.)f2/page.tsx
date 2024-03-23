@@ -1,3 +1,3 @@
 export default function Interceptedf2() {
-  return <h1>Intercepted f2 page</h1>
+  return <h1>Intercepted f2 page</h1>;
 }

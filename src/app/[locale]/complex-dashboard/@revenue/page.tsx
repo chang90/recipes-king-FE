@@ -1,3 +1,3 @@
 export default function UserRevenue() {
-  return <div>User Revenue</div>
+  return <div>User Revenue</div>;
 }

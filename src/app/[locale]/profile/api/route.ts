@@ -1,4 +1,4 @@
-import { type NextRequest } from 'next/server';
+import { type NextRequest } from "next/server";
 import { headers, cookies } from "next/headers";
 
 export async function GET(request: NextRequest) {
@@ -6,7 +6,7 @@ export async function GET(request: NextRequest) {
   const headerList = headers();
   const theme = request.cookies.get("theme");
 
-  cookies().set("resultsPerPage", "20")
+  cookies().set("resultsPerPage", "20");
 
   console.log(requestHeaders.get("Authorization"));
   console.log(headerList.get("Authorization"));

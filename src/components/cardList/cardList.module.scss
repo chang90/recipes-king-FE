@@ -3,7 +3,8 @@
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 1rem;
-  ul, li {
+  ul,
+  li {
     list-style-type: none;
   }
 
