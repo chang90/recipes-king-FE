@@ -1,5 +1,5 @@
-import Card from "@/components/card/card";
-import Link from "next/link";
+import Card from '@/components/card/card';
+import Link from 'next/link';
 
 export default function Notification() {
   return (

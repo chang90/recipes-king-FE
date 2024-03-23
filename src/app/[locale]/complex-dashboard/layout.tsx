@@ -1,5 +1,5 @@
-import Card from "@/components/card/card";
-import React from "react";
+import Card from '@/components/card/card';
+import React from 'react';
 
 export default function DashboardLayout({
   children,
@@ -18,12 +18,12 @@ export default function DashboardLayout({
   return isLoggedIn ? (
     <>
       <div>{children}</div>
-      <div style={{ display: "flex", flexDirection: "column" }}>
-        <div style={{ display: "flex" }}>
+      <div style={{ display: 'flex', flexDirection: 'column' }}>
+        <div style={{ display: 'flex' }}>
           <Card title="User">{users}</Card>
           <Card title="Revenue">{revenue}</Card>
         </div>
-        <div style={{ display: "flex", flex: 1 }}>
+        <div style={{ display: 'flex', flex: 1 }}>
           <Card title="Notifications">{notifications}</Card>
         </div>
       </div>

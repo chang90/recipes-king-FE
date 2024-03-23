@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React from "react";
-import styles from "./nav.module.scss";
-import { Image as ImageType } from "@/types";
+import Image from 'next/image';
+import React from 'react';
+import styles from './nav.module.scss';
+import { Image as ImageType } from '@/types';
 
 type Content = {
   url: string;
@@ -20,7 +20,7 @@ const Nav: React.FC<NavProps> = ({ logo, content }) => {
         width={30}
         height={40}
         src={logo?.src}
-        alt={logo?.alt || "Image"}
+        alt={logo?.alt || 'Image'}
       />
     </div>
   );

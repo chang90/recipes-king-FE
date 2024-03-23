@@ -1,7 +1,7 @@
-"use client";
-import { DotLottiePlayer, Controls } from "@dotlottie/react-player";
-import "@dotlottie/react-player/dist/index.css";
-import React from "react";
+'use client';
+import { DotLottiePlayer, Controls } from '@dotlottie/react-player';
+import '@dotlottie/react-player/dist/index.css';
+import React from 'react';
 
 type ImageDetails = {
   src?: string;
@@ -22,7 +22,7 @@ const LottieImage: React.FC<ImageProps> = ({ title, description, image }) => {
   };
 
   return (
-    <DotLottiePlayer src={image?.src || ""} autoplay loop>
+    <DotLottiePlayer src={image?.src || ''} autoplay loop>
       <Controls />
     </DotLottiePlayer>
   );

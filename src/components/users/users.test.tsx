@@ -1,33 +1,33 @@
-import { render, screen } from "@testing-library/react";
-import { Users } from "./users";
+import { render, screen } from '@testing-library/react';
+import { Users } from './users';
 
 global.fetch = jest.fn(() =>
   Promise.resolve({
     json: () =>
       Promise.resolve([
         {
-          name: "Bruce Wayne",
+          name: 'Bruce Wayne',
         },
         {
-          name: "Clark Kent",
+          name: 'Clark Kent',
         },
         {
-          name: "Princess Diana",
+          name: 'Princess Diana',
         },
       ]),
   }),
 ) as jest.Mock;
 
-describe("Users", () => {
-  test("renders correctly", async () => {
+describe('Users', () => {
+  test('renders correctly', async () => {
     await render(<Users />);
-    const textElement = screen.getByText("Users");
+    const textElement = screen.getByText('Users');
     expect(textElement).toBeInTheDocument();
   });
 
-  test("renders a list of users", async () => {
+  test('renders a list of users', async () => {
     await render(<Users />);
-    const users = await screen.findAllByRole("listitem");
+    const users = await screen.findAllByRole('listitem');
     expect(users).toHaveLength(3);
   });
 });

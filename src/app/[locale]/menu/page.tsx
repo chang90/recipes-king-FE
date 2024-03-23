@@ -1,4 +1,4 @@
-"use client";
+'use client';
 function getRandomInt(count: number) {
   return Math.floor(Math.random() * count);
 }
@@ -8,6 +8,6 @@ export default function ReviewDetail({ params }: { params: {} }) {
   console.log(random);
 
   if (random === 1) {
-    throw new Error("Error loading review");
+    throw new Error('Error loading review');
   }
 }
