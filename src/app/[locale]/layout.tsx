@@ -7,6 +7,8 @@ import Nav from '@/components/nav/nav';
 
 
 
+
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
