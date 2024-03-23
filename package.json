@@ -10,7 +10,8 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\"",
     "test": "jest",
     "test:watch": "npm t --watch",
-    "coverage": "npm t -- --coverage --watchAll --collectCoverageFrom'src/components/**/*.{ts,tsx}' --collectCoverageFrom'src/components/**/*.{types,stories,constants,test,spec}.{ts,tsx}'"
+    "coverage": "npm t -- --coverage --watchAll --collectCoverageFrom'src/components/**/*.{ts,tsx}' --collectCoverageFrom'src/components/**/*.{types,stories,constants,test,spec}.{ts,tsx}'",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@dotlottie/react-player": "^1.6.17",
@@ -39,6 +40,7 @@
     "sass": "^1.69.5",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "typescript": "^5",
+    "husky": "^8.0.0"
   }
 }
