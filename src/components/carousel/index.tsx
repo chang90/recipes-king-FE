@@ -7,15 +7,19 @@ interface PropsType {
 
 const Carousel: React.FC<PropsType> = (props) => {
   return (
-    <ul className={styles['carousel']}>
-      {React.Children.map(props.children, (child, key) => {
-        return (
-          <li className={styles['carousel__item']} key={key}>
-            {child}
-          </li>
-        );
-      })}
-    </ul>
+    <div className={styles['carousel']}>
+      <div className={styles['carousel__slides-container']}>
+        <ul className={styles['carousel__slides']}>
+          {React.Children.map(props.children, (child, key) => {
+            return (
+              <li className={styles['carousel__slide']} key={key}>
+                {child}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
   );
 };
 

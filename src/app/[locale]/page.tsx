@@ -49,6 +49,14 @@ export default function Page({
             alt: '茶叶蛋',
           }}
         />
+        <Card
+          title="水煮蛋"
+          description="水 + 鸡蛋 + 酱油"
+          image={{
+            src: 'https://placehold.co/30x30/ABC/31343C',
+            alt: '水煮蛋',
+          }}
+        />
       </Carousel>
       <div className={styles.description}>
         <LottieImage
