@@ -19,7 +19,8 @@
     "next": "14.0.4",
     "npm": "^10.5.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.4.2",
@@ -45,7 +46,11 @@
     "typescript": "^5"
   },
   "lint-staged": {
-    "*.{ts,tsx}": ["eslint"],
-    "*.{ts,tsx, css,scss}": ["prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\""]
+    "*.{ts,tsx}": [
+      "eslint"
+    ],
+    "*.{ts,tsx, css,scss}": [
+      "prettier --ignore-path .gitignore --write \"**/*.{ts,tsx,css,scss}\""
+    ]
   }
 }
